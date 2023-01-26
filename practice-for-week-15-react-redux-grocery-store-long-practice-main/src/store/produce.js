@@ -4,6 +4,8 @@ const POPULATE = "produce/POPULATE";
 
 
 const produceReducer = (state = {}, action) => {
+  console.log("hi wilson")
+  // debugger;
   // Object.freeze(state)
 
   switch (action.type){
@@ -20,7 +22,7 @@ const produceReducer = (state = {}, action) => {
 }
 
 export const populateProduce = produce => {
-  console.log(produce)
+  console.log("hello joseph")
   return {
     type: POPULATE,
     produce: produceData
